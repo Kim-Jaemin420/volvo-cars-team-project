@@ -1,5 +1,3 @@
-
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -7,6 +5,55 @@ body {
   font-family: 'Raleway', sans-serif;
   background-color: coral;
 }
+a{
+  text-decoration: none;
+}
+/* 헤더 */
+.header{
+  padding: 10px 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 헤더 레프트 */
+.left-header li{
+  display: inline-block;
+  margin-right: 13px;
+}
+.left-header a{
+  padding-bottom: 25px;
+  font-size: 15px;
+  color: #8b8b8b;
+}
+.left-header a::after{
+  content: '';
+  display: inline-block;
+  background-image: url(../img/chevron-down-solid.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+/* 로고 */
+.logo{
+  margin-left: 90px;
+}
+.logo img{
+  width: 51px;
+  height: 51px;
+}
+/* 헤더 라이트 */
+.right-header li{
+  display: inline-block;
+  margin-right: 25px;
+}
+.right-header a{
+  color: #8b8b8b;
+  padding: 20px 0;
+}
+
 .main-banner {
   background-image: url('/img/sup00164_1920.png');
   background-size: 100% 600px;
